@@ -1,0 +1,12 @@
+{
+  "name": "bio",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:TITanZK/bio.git",
+  "author": "TITanZK <503838819@qq.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "cssnano": "^5.1.12",
+    "postcss": "^8.4.14"
+  }
+}
