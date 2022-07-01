@@ -1,0 +1,160 @@
+* {
+  box-sizing: border-box;
+}
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #eee;
+  margin: 20px 0;
+}
+
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+article {
+  width: 21cm;
+  min-height: 29.7cm;
+  background: #fff;
+  margin: 0 auto;
+  padding: 1em;
+  overflow: auto;
+}
+p {
+  margin: 0.3em 0;
+}
+h1 {
+  font-size: 24px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+h2 {
+  position: relative;
+  background-color: #f2f2f2;
+  margin: 10px 0;
+  padding: 5px 0;
+  padding-left: 18px;
+  font-size: 18px;
+}
+h2::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+  display: block;
+  width: 4px;
+  height: 100%;
+  background-color: #000;
+}
+
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+strong {
+  font-weight: normal;
+  color: #66b0f9;
+}
+a {
+  color: #999;
+  text-decoration: none;
+  border-bottom: 1px solid;
+}
+p,
+li {
+  color: #666;
+}
+
+.bio {
+  position: relative;
+}
+.bio img {
+  position: absolute;
+  top: -18px;
+  right: 0;
+}
+.others > h2 {
+  margin-top: 18px;
+  margin-bottom: 10px;
+}
+.others > ul,
+.projects > ul,
+.skills > ul,
+.openSource > ul,
+.jobs > ol {
+  margin-bottom: 18px;
+}
+.project-title,
+.openSource-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.project-title > h3,
+.openSource-title > h3 {
+  margin: 4px 0;
+}
+
+.skills > ul {
+  margin-top: 8px;
+}
+.jobs > ol > li {
+  margin: 12px 0;
+}
+.jobs header {
+  display: flex;
+  align-items: center;
+  color: #666;
+  margin-bottom: 12px;
+}
+
+.jobs header > h3 {
+  font-size: 18px;
+  color: #333;
+}
+
+.jobs header > h4 {
+  margin-left: 1em;
+  font-size: 18px;
+}
+
+.jobs header > span {
+  font-size: 18px;
+  margin-left: auto;
+}
+
+.bio > p a {
+  border: none;
+  color: #666;
+}
+
+@media (max-width: 500px) {
+  body {
+    margin: 0;
+  }
+  article {
+    width: auto;
+    height: auto;
+  }
+  .bio > img {
+    display: none;
+  }
+  .jobs > ol header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .jobs > ol header > span,
+  .jobs > ol header > h4 {
+    margin: 0;
+  }
+}
