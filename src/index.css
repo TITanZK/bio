@@ -33,7 +33,7 @@ p {
 }
 h1 {
   font-size: 24px;
-  margin-top: 0;
+  margin-top: 14px;
   margin-bottom: 20px;
 }
 h2 {
@@ -107,6 +107,9 @@ li {
 
 .skills > ul {
   margin-top: 8px;
+}
+.skills > ul li {
+  margin: 5px 0;
 }
 .jobs > ol > li {
   margin: 12px 0;
