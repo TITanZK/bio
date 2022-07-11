@@ -11,6 +11,7 @@ ol {
 body {
   background-color: #eee;
   margin: 20px 0;
+  font-family: 'Microsoft YaHei';
 }
 
 h3,
@@ -25,7 +26,7 @@ article {
   min-height: 29.7cm;
   background: #fff;
   margin: 0 auto;
-  padding: 1em;
+  padding: 42px;
   overflow: auto;
 }
 p {
@@ -39,7 +40,7 @@ h1 {
 h2 {
   position: relative;
   background-color: #f2f2f2;
-  margin: 10px 0;
+  margin: 15px 0;
   padding: 5px 0;
   padding-left: 18px;
   font-size: 18px;
@@ -70,6 +71,13 @@ a {
   text-decoration: none;
   border-bottom: 1px solid;
 }
+.projects a,
+.openSource a {
+  font-size: 13px;
+}
+.projects p > a {
+  font-size: inherit;
+}
 p,
 li {
   color: #666;
@@ -93,10 +101,12 @@ li {
 .others > ul,
 .projects > ul,
 .skills > ul,
-.openSource > ul,
-.jobs > ol {
+.openSource > ul {
   margin-bottom: 18px;
 }
+/* .jobs > ol {
+  margin-bottom: 18px;
+} */
 .project-title,
 .openSource-title {
   display: flex;
@@ -106,6 +116,7 @@ li {
 .project-title > h3,
 .openSource-title > h3 {
   margin: 4px 0;
+  font-size: inherit;
 }
 
 .skills > ul {
@@ -114,7 +125,7 @@ li {
 .skills > ul li {
   margin: 5px 0;
 }
-.jobs > ol > li {
+/* .jobs > ol > li {
   margin: 12px 0;
 }
 .jobs header {
@@ -137,7 +148,7 @@ li {
 .jobs header > span {
   font-size: 18px;
   margin-left: auto;
-}
+} */
 
 .bio > p a {
   border: none;
@@ -155,12 +166,12 @@ li {
   .bio > img {
     display: none;
   }
-  .jobs > ol header {
+  /* .jobs > ol header {
     flex-direction: column;
     align-items: flex-start;
   }
   .jobs > ol header > span,
   .jobs > ol header > h4 {
     margin: 0;
-  }
+  } */
 }

@@ -16,9 +16,9 @@
       margin-top: 16px;
     } */
 
-    .openSource {
+    .split {
       page-break-before: always;
-      margin-top: 30px;
+      padding-top: 42px;
     }
   </style>
   <title>简历</title>
@@ -48,20 +48,20 @@
       <ul>
         <li>
           <header class="project-title">
-            <h3>多多UI</h3>
+            <h3>基于Vue封装 UI 库</h3>
             <span>
               <a href="https://github.com/TITanZK/dd-ui">源码地址</a>
               <a href="https://zk_titan.gitee.io/ddui-doc/">预览连接</a>
             </span>
           </header>
-          <p>本项目是一个基于 <strong>Vue 2</strong> / <strong>parcel</strong> 开发的简单 UI 组件库。主要组件有输入框、按钮、栅格系统等。我对此 UI 库做了一个文档，以便开发者使用交流。</p>
-          <p>项目使用 <strong>Travis CI</strong> 做了持续集成测试，且测试用例全部通过，质量有保证。</p>
+          <p>本项目是一个基于 <strong>Vue 2</strong> / <strong>parcel</strong> 开发的简单 UI 组件库。主要组件有输入框、按钮、栅格系统等。针对这个 UI 库我还做了一个使用说明文档，以便开发者使用交流。</p>
+          <p>本项目的所有组件都使用 <strong>Travis CI</strong> 做了持续集成测试，且测试用例全部通过，质量有保证。</p>
           <p>通过做出这些简单的 UI 组件，让我对 Vue 的一些特性在特定场景中使用有了更深的理解。</p>
         </li>
 
         <li>
           <header class="project-title">
-            <h3>多多记账</h3>
+            <h3>多多记账应用</h3>
             <span>
               <a href="https://github.com/TITanZK/account">源码地址</a>
               <a href="https://zk_titan.gitee.io/account_vue_website">预览连接</a>
@@ -75,7 +75,7 @@
           <p>
             期间遇到了很多 <strong>webpack</strong> 和 <strong>TypeScript</strong> 方面的问题，这里我写了
             <a href="https://zhuanlan.zhihu.com/p/358780391">一篇博客</a> 对其进行了总结。
-            本项目又用 <strong>React重新实现</strong> 了一次，使用了 React Hooks，加深了我对 <strong>Hooks</strong>的理解和应用，可到 GitHub 仓库中 (account-react) 查看预览。
+            本项目又用 <strong>React重新实现</strong> 了一次，使用了 React Hooks，加深了我对 <strong>Hooks</strong> 的理解和应用，可到 GitHub 仓库中 (account-react) 查看预览。
           </p>
         </li>
 
@@ -93,6 +93,17 @@
             验证机制，并在前端做了路由守卫，保证了一定的安全性。</p>
         </li>
 
+        <li>
+          <header class="project-title">
+            <h3>导航网站</h3>
+            <span>
+              <a href="https://github.com/TITanZK/nav-1">源码地址</a>
+              <a href="https://zk_titan.gitee.io/nav-1/src/index.html">预览连接</a>
+            </span>
+          </header>
+          <p>这是我在学习 JavaScript 和 <strong>jQuery</strong> 时做的一个简单网站导航，可快速导航网站，还具有网站搜索、添加网址等功能。</p>
+        </li>
+
       </ul>
     </section>
     <!-- 专业技能 -->
@@ -103,7 +114,7 @@
         <li>能用 <strong>ES6</strong> 语法进行日常开发，在实验项目中能尝试使用新标准的 ECMAScript</li>
         <li>熟练掌握 <strong>Vue 全家桶</strong> 的使用，包括 VueRouter / Vuex / VueCli 等</li>
         <li>了解 <strong>Vue3</strong> 新特性和 <strong>Composition API</strong> 的使用</li>
-        <li>熟悉 React 全家桶的使用，包括 create-react-app / ReactRouter / Redux等</li>
+        <li class="split">熟悉 React 全家桶的使用，包括 create-react-app / ReactRouter / Redux等</li>
         <li>熟悉 <strong>前后端分离</strong> 技术，包括 AJAX / 跨域 / 前端路由 / Cookie / Session 等</li>
         <li>在项目中使用过 <strong>Webpack</strong> / <strong>Vite</strong> / <strong>Parcel</strong> 等打包工具，了解 <strong>git</strong> /
           <strong>yarn</strong> /
@@ -133,13 +144,12 @@
 
         <li>
           <header class="openSource-title">
-            <h3>导航网站</h3>
+            <h3>手写 DOM 库</h3>
             <span>
-              <a href="https://github.com/TITanZK/nav-1">源码地址</a>
-              <a href="https://zk_titan.gitee.io/nav-1/src/index.html">预览连接</a>
+              <a href="https://github.com/TITanZK/DOM-package/blob/main/src/dom.js">源码地址</a>
             </span>
           </header>
-          <p>这是我在学习 JavaScript 和 <strong>jQuery</strong> 时做的一个简单网站导航，可快速导航网站，还具有网站搜索、添加网址等功能。</p>
+          <p>这是我在学习 <strong>DOM</strong> 时封装的一个 DOM 操作库。由于 DOM 原生 API 是在是太长太多了，也记不全，所以自己动手对常用的 API 进行了封装。</p>
         </li>
 
         <li>
@@ -154,21 +164,21 @@
       </ul>
     </section>
     <!-- 工作经历 -->
-    <section class="jobs">
-      <h2>工作经历</h2>
+    <!-- <section class="jobs">
+      <h2>XXXX</h2>
       <ol>
         <li>
           <header>
-            <h3>武汉滴滴网络科技有限公司</h3>
+            <h3>XXXXXXX</h3>
             <h4>前端开发工程师</h4>
-            <span><time>2022年3月</time>~<time>2022年3月</time></span>
+            <span><time>XXXX年X月</time>~<time>XXXX年X月</time></span>
           </header>
           <ul>
-            <li>负责恋爱记 APP 移动端的需求开发</li>
+            <li>XXXXXXXXXXXXXXXXXXXX</li>
           </ul>
         </li>
       </ol>
-    </section>
+    </section> -->
     <!-- 教育经历 -->
     <section class="education">
       <h2>教育经历</h2>
